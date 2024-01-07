@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang=>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> bruit de fond </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+.button {
+  font-size: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 0px;
+  transition-duration: 0.1s;}
+
+.button1 {color: #5f5e5a; border: 2px solid #5f5e5a; background-color: #f0f2f3;}
+.button2 {color: #f0f2f3; border: 2px solid #f0f2f3; background-color: #f0f2f3;}
+</style>
+
+</head>
+
+<body style="background-color: #f0f2f3">
+
+<h1 style="font-size: 20px; color: #a8aaaa"> 	</h1>
+	<p style="text-align: left; font-size: 14px; color: #ffffff;"></p>
+
+  <p><button type="button" class="button button1" 
+	id="record">Enregistrer</button><br/>
+    <button type="button" class="button button2" 
+	id="stopRecord" disabled>Stop</button></p>
+  <p><audio id="recordedAudio"></audio></p>
+
+  <script> 
+    navigator.mediaDevices.getUserMedia({audio:true})
+    .then(stream => {handlerFunction(stream)})
+
+    function handlerFunction(stream) {
+      rec = new MediaRecorder(stream);
+      rec.ondataavailable = e => {
+        audioChunks.push(e.data);
+        if (rec.state == "inactive"){
+          let blob = new Blob(audioChunks,{type:'audio/mp3'});
+          recordedAudio.src = URL.createObjectURL(blob);
+          recordedAudio.controls=true;
+          recordedAudio.autoplay=true;
+          sendData(blob)
+          }
+        }
+      }
+    
+    function sendData(data) {}
+
+      record.onclick = e => {
+        record.disabled = true;
+        record.style.color = "#f0f2f3";
+	  record.style.border = "2px solid #f0f2f3";
+        stopRecord.disabled=false;
+        stopRecord.style.color = "#5f5e5a";
+	  stopRecord.style.border = "2px solid #5f5e5a";
+        audioChunks = [];
+        rec.start();
+        }
+      stopRecord.onclick = e => {
+        record.disabled = false;
+        stop.disabled=true;
+        record.style.color = "#5f5e5a";
+	  record.style.border = "2px solid #5f5e5a";
+        stopRecord.style.color = "#f0f2f3";
+	  stopRecord.style.border = "2px solid #f0f2f3";
+        rec.stop();
+        }
+  </script>
+
+
+<audio controls>	<source src="src\77.mp3"></audio><br /> 
+<audio controls>	<source src="src\76.mp3"></audio><br /> 
+<audio controls>	<source src="src\75.mp3"></audio><br /> 
+<audio controls>	<source src="src\74.mp3"></audio><br /> 
+<audio controls>	<source src="src\73.mp3"></audio><br /> 
+<audio controls>	<source src="src\72.mp3"></audio><br /> 
+<audio controls>	<source src="src\71.mp3"></audio><br /> 
+<audio controls>	<source src="src\70.mp3"></audio><br /> 
+<audio controls>	<source src="src\69.mp3"></audio><br /> 
+<audio controls>	<source src="src\68.mp3"></audio><br /> 
+<audio controls>	<source src="src\67.mp3"></audio><br /> 
+<audio controls>	<source src="src\66.mp3"></audio><br /> 
+<audio controls>	<source src="src\65.mp3"></audio><br /> 
+<audio controls>	<source src="src\64.mp3"></audio><br /> 
+<audio controls>	<source src="src\63.mp3"></audio><br /> 
+<audio controls>	<source src="src\62.mp3"></audio><br /> 
+<audio controls>	<source src="src\61.mp3"></audio><br /> 
+<audio controls>	<source src="src\60.mp3"></audio><br /> 
+<audio controls>	<source src="src\59.mp3"></audio><br /> 
+<audio controls>	<source src="src\58.mp3"></audio><br /> 
+<audio controls>	<source src="src\57.mp3"></audio><br /> 
+<audio controls>	<source src="src\56.mp3"></audio><br /> 
+<audio controls>	<source src="src\55.mp3"></audio><br /> 
+<audio controls>	<source src="src\54.mp3"></audio><br /> 
+<audio controls>	<source src="src\53.mp3"></audio><br /> 
+<audio controls>	<source src="src\52.mp3"></audio><br /> 
+<audio controls>	<source src="src\51.mp3"></audio><br /> 
+<audio controls>	<source src="src\50.mp3"></audio><br /> 
+<audio controls>	<source src="src\49.mp3"></audio><br /> 
+<audio controls>	<source src="src\48.mp3"></audio><br /> 
+<audio controls>	<source src="src\47.mp3"></audio><br /> 
+<audio controls>	<source src="src\46.mp3"></audio><br /> 
+<audio controls>	<source src="src\45.mp3"></audio><br /> 
+<audio controls>	<source src="src\44.mp3"></audio><br /> 
+<audio controls>	<source src="src\43.mp3"></audio><br /> 
+<audio controls>	<source src="src\42.mp3"></audio><br /> 
+<audio controls>	<source src="src\41.mp3"></audio><br /> 
+<audio controls>	<source src="src\40.mp3"></audio><br /> 
+<audio controls>	<source src="src\39.mp3"></audio><br /> 
+<audio controls>	<source src="src\38.mp3"></audio><br /> 
+<audio controls>	<source src="src\37.mp3"></audio><br /> 
+<audio controls>	<source src="src\36.mp3"></audio><br /> 
+<audio controls>	<source src="src\35.mp3"></audio><br /> 
+<audio controls>	<source src="src\34.mp3"></audio><br /> 
+<audio controls>	<source src="src\33.mp3"></audio><br /> 
+<audio controls>	<source src="src\32.mp3"></audio><br /> 
+<audio controls>	<source src="src\31.mp3"></audio><br /> 
+<audio controls>	<source src="src\30.mp3"></audio><br /> 
+<audio controls>	<source src="src\29.mp3"></audio><br /> 
+<audio controls>	<source src="src\28.mp3"></audio><br /> 
+<audio controls>	<source src="src\27.mp3"></audio><br /> 
+<audio controls>	<source src="src\26.mp3"></audio><br /> 
+<audio controls>	<source src="src\25.mp3"></audio><br /> 
+<audio controls>	<source src="src\24.mp3"></audio><br /> 
+<audio controls>	<source src="src\23.mp3"></audio><br /> 
+<audio controls>	<source src="src\22.mp3"></audio><br /> 
+<audio controls>	<source src="src\21.mp3"></audio><br /> 
+<audio controls>	<source src="src\20.mp3"></audio><br /> 
+<audio controls>	<source src="src\19.mp3"></audio><br /> 
+<audio controls>	<source src="src\18.mp3"></audio><br /> 
+<audio controls>	<source src="src\17.mp3"></audio><br /> 
+<audio controls>	<source src="src\16.mp3"></audio><br /> 
+<audio controls>	<source src="src\15.mp3"></audio><br /> 
+<audio controls>	<source src="src\14.mp3"></audio><br /> 
+<audio controls>	<source src="src\13.mp3"></audio><br /> 
+<audio controls>	<source src="src\12.mp3"></audio><br /> 
+<audio controls>	<source src="src\11.mp3"></audio><br /> 
+<audio controls>	<source src="src\10.mp3"></audio><br /> 
+<audio controls>	<source src="src\9.mp3"></audio><br /> 
+<audio controls>	<source src="src\8.mp3"></audio><br /> 
+<audio controls>	<source src="src\7.mp3"></audio><br /> 
+<audio controls>	<source src="src\6.mp3"></audio><br /> 
+<audio controls>	<source src="src\5.mp3"></audio><br /> 
+<audio controls>	<source src="src\4.mp3"></audio><br /> 
+<audio controls>	<source src="src\3.mp3"></audio><br /> 
+<audio controls>	<source src="src\2.mp3"></audio><br /> 
+<audio controls>	<source src="src\1.mp3"></audio><br /> 
+
+</body>
+</html>
