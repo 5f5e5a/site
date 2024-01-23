@@ -1,37 +1,103 @@
-<!DOCTYPE html> 
-<html> 
-<body style="background-color: #5f5e5a">	
-<center>
-  
-<p style="color: #ffffff"> son sur image de moi</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LABO SON</title>
+    <style>
+	dialog {    }
+	button { 
+  height:50px; 
+  width:200px;
+  border: 2px solid black;
+  background-color: white;
+	}
+    </style>
+  </head>
 
-<video width="200" controls>
+  <body>
+
+    <div>
+      <dialog id="moi">
+       <video width="400" controls>
   <source src="moi.mp4" type="video/mp4">
 </video>
-
 <br/>
 
-<a style="color: #ffffff" href="https://5f5e5a.bandcamp.com/"> (d'autres trucs bricolage son) </a>.
+<a style="color: black" href="https://5f5e5a.bandcamp.com/"> d'autres trucs bricolage son sans images </a>.
+<br/>
+        <button id="FERMERmoi" style="height:30px;width:30px" >X</button>
+      </dialog>
 
-<hr />
+      <button id="OUVRIRmoi">SON SUR IMAGES DE MOI</button>
+    </div>
+<br/>
 
-<p style="color: #ffffff"> son pour images</p>
 
-<video width="200" controls>
+<div>
+      <dialog id="autre">
+     <video width="400" controls>
   <source src="autre.mp4" type="video/mp4">
 </video>
+<br/>
+<p style="color: black">  </p>
 
-<hr />
+        <button id="FERMERautre" style="height:30px;width:30px">X</button>
+      </dialog>
 
-<p style="color: #ffffff"> musique pour illu de
-<a style="color: #ffffff" href="https://www.instagram.com/sophiecourge/">@sophiecourge</a>.
-</p>
+      <button id="OUVRIRautre">SON POUR IMAGES</button>
+    </div>
+<br/>
 
-<video width="100" controls>
+
+<div>
+      <dialog id="music">
+      <video width="300" controls>
   <source src="music.mp4" type="video/mp4">
 </video>
+<br/>
+<p style="color: black"> musique pour illu de
+<a style="color: black" href="https://www.instagram.com/sophiecourge/">@sophiecourge</a>.
+</p>
+        <button id="FERMERmusic" style="height:30px;width:30px">X</button>
+      </dialog>
+
+      <button id="OUVRIRmusic">MUSIQUE POUR IMAGES</button>
+    </div>
+<br/>
 
 
+
+
+    <script type="text/JavaScript">
+      (function() {  
+             var dialog = document.getElementById('moi');  
+             document.getElementById('OUVRIRmoi').onclick = function() { dialog.show();  
+         }; 
+           document.getElementById('FERMERmoi').onclick = function() { dialog.close();  
+ }; 
+      })();
+
+   (function() {  
+             var dialog = document.getElementById('autre');  
+             document.getElementById('OUVRIRautre').onclick = function() { dialog.show();  
+         }; 
+           document.getElementById('FERMERautre').onclick = function() { dialog.close();  
+ }; 
+      })();
+
+ (function() {  
+             var dialog = document.getElementById('music');  
+             document.getElementById('OUVRIRmusic').onclick = function() { dialog.show();  
+         }; 
+           document.getElementById('FERMERmusic').onclick = function() { dialog.close();  
+ }; 
+      })();
+
+
+
+    </script>
+
+  </body>
+</html>
 
 
 
