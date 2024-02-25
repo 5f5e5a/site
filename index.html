@@ -1,25 +1,173 @@
-
 <!DOCTYPE html>
-<html lang=>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head> 
-	<title> ecole </title>
+    <title>-</title>
+    <style>
+	dialog { 
+  width: 80%; 
+	}
+	button { 
+  font-size: 14px;
+  float: ;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+	}
+	textarea {
+position:  ; 
+ float: ;
+  border: 2px solid black;
+	}
+ th, td {
+        padding: 10px;
+        border: 2px solid black;
+     	}
+hr { 
+height:1px; width:80%; border-width:0; background-color: black; }
 
-<style>
-</style>
-</head>
 
 
-<body style="background-color: #5f5e5a">	
-<tt>
+
+    </style>
+  </head>
 
 
-<h1 style="font-size: 11px; color: #f0f2f3"></h1>
-	<p style="text-align: left; font-size: 14px; color: #ffffff;"></p>
-<a href="bruitdefond.html" style="font-size: 10px; color: #f0f2f3">bruit de fond </a>
+  <body>
+
+<!-- bouton1---------------------------------- -->
+<div><dialog id="PDD">
+
+ <table style=" border-collapse:collapse"; border="0"; float="left"><tr>
+<td><button id="XPDD"><</button></td>
+<td style="font-size: 20px">PdDaw(...en cours) :</td>
+<td> logiciel de son modulaire pour usage live, sur pure data</td>
+      </tr></table>
+
+<div style= float="left">
+<p>-----------------------------------</p>
+<p> téléchargement :</p>
+<a style="color: black;" href="link/to/your/download/file" download>PdDaw.pd</a>
 </br>
-<a href="https://kouroskouroskouroskouros.bandcamp.com/album/bruitdefond" style="font-size: 10px; color: #f0f2f3">https://kouroskouroskouroskouros.bandcamp.com/album/bruitdefond
-</a>
+<p>-----------------------------------</p>
+
+
+	+ setups exemples </br>
+	+ patchs en plus </br>
+	+ patchs poubelle </br>
+
+<p>-----------------------------------</p>
+</br>
+
+
+<textarea rows=1 cols=20>
+Goal >
+	equilibre daw/instrument
+	Usage performatif /live
+	logique modulaire > traitement d'enregistrement
+	usage moin normé/bridé 
+	- poussé + accesible
+	tout faire (pas de tiers nécessaire)
+	from scratch > modifiable accessiblement (ressources Pd)
+</textarea>
+
+<textarea rows=1 cols=20>
+Utilisation >
+bricoler assembler les élements > créer son outil </br>
+entré et sortie legendés sur chaques modules </br>
+types de signaux : son ; cv ; /trig? (+convertisseur) </br>
+un module = une fonction (+simple possible) qui a plusieurs application </br>
+ </br>
+	
+</textarea>
+
+<textarea rows=1 cols=20>
+Liste des modules >
+ </br>
+	:module central </br>
+	tableau = cellule d'enregistrement / sequencer / modulation </br>
+	 </br>
+	:modulaires </br> 
+	durée>lecture = lecteur de tab / modulation / phasor </br>
+	selecteur = montage son /  </br>
+	génerateur de séquence aléatoire </br>
+ </br>
+	:effets  </br>
+	pitch shifter =  </br>
+	filtre lp bp hp </br>
+	 </br>
+	:monofonctions  </br>
+	convertisseur durée / tap tempo  </br>
+	convertisseur son/cv  </br>
+	visualiser  </br>
+	entrée son </br>
+	*sortie son + exporteur  </br>
+	mixer  </br>
+	 </br>
+	
+</textarea>
+
+
+</br>
+</br>
+
+
+  <table style=" border-collapse:collapse;" align="left" ; border="0";>
+      <tr>		
+        <td>PureData > <a style="color: black;" href="https://puredata.info/" target="_blank">https://puredata.info/ </a></br>
+"Pure Data (or just "Pd") is an open source visual programming language for multimedia."</br></td>
+</tr>
+<tr><td>
+<a style="color: black;"ressources/TutoBasics.pd" download>TutoBasics.pd</a></br>
+<a style="color: black;"TutoEnregistrement.pd" download>TutoEnregistrement.pd</a>
+</td></tr> 
+	<tr><td>
+<textarea rows=1 cols=20>
+Ressources >
+https://msp.ucsd.edu/
+</textarea>
+	</td></tr></table>
+
+
+
+
+
+</p>
+
+</dialog>
+<button id="OPDD">PdDaw(...)</button></div> 
+<!-- ----------------------------------bouton1 -->
+
+</br>
+
+
+
+
+
+
+
+    <script type="text/JavaScript">
+
+<!-- bouton1---------------------------------- -->
+      (function() {  
+             var dialog = document.getElementById('PDD');  
+             document.getElementById('OPDD').onclick = function() { dialog.show();  
+         }; 
+           document.getElementById('XPDD').onclick = function() { dialog.close();  
+ }; 
+   })();
+<!-- ----------------------------------bouton1 -->
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
 
 </tt>
 </body>
