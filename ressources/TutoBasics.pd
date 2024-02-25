@@ -1,0 +1,100 @@
+#N canvas -11 -11 1920 1016 12;
+#X obj 141 107 credits;
+#X obj 722 314 1;
+#X msg 722 347 2;
+#X floatatom 720 381 5 0 0 0 - - -;
+#X text 666 314 ctrl 1;
+#X text 666 347 ctrl 2;
+#X text 666 381 ctrl 3;
+#X obj 1440 268 *;
+#X obj 1440 364 *~;
+#X obj 1440 303 *;
+#X obj 1440 329 *;
+#X text 492 134 aide > navigateur d'aide > PureData/;
+#X obj 395 113 guide html;
+#X text 491 113 aide > aide html;
+#X obj 395 135 patch exemple;
+#X floatatom 391 659 5 0 0 0 - - -;
+#X floatatom 331 659 5 0 0 0 - - -;
+#X floatatom 352 742 5 0 0 0 - - -;
+#X msg 391 622 1;
+#X obj 395 81 POUR APPROFONDIR;
+#X text 664 259 click droit (élement) > aide : informations et exemples
+;
+#X obj 140 81 TUTO BASICS PUREDATA;
+#X obj 148 284 CTRL E;
+#X text 1472 347 ~ signal audio (continu);
+#X text 1479 285 signal numérique;
+#X msg 1283 303 objet;
+#X text 1212 315 sortie ->;
+#X text 1218 294 entré ->;
+#X obj 1211 239 BRANCHEMENT;
+#X obj 331 592 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 722 412 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 667 410 ctrl B;
+#X text 769 408 boutton : déclencheur;
+#X text 766 381 number box : interactible;
+#X text 759 346 message box : figé;
+#X text 762 317 object box : click droit (vide) > aide = liste;
+#X obj 150 528 EXEMPLE : ordre d'operation;
+#X obj 442 355 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 171 308 <-> mode performance (interagir);
+#X obj 352 698 -;
+#X msg 331 622 2;
+#X text 632 636 EXERCICE : faire le calcul en interagissant uniquement
+avec l'entrée de droite, f 29;
+#X text 144 368 EXERCICE : tester les modes sur le boutton;
+#X text 200 283 mode edition (selectionner deplacer), f 37;
+#X text 658 205 -----------------------------------------------------------------------
+, f 72;
+#X text 212 690 entré de gauche -> = déclencheur, f 18;
+#X text 382 689 <- entré de droite = "inerte", f 18;
+#X text 432 659 <- interactible;
+#N canvas 1015 180 450 163 (subpatch) 0;
+#X floatatom 328 129 5 0 0 0 - - -;
+#X floatatom 268 129 5 0 0 0 - - -;
+#X floatatom 289 212 5 0 0 0 - - -;
+#X msg 328 92 1;
+#X obj 268 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 289 168 -;
+#X msg 268 92 2;
+#X text 7 25 click droite > ouvrir, f 13;
+#X text 212 12 déclanche le signal de gauche quand le signal de droite
+varie, f 31;
+#X text 7 7 SOLUTION :;
+#X connect 0 0 5 1;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 3 0 0 0;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 6 0 1 0;
+#X coords 0 1 100 -1 105 57 1 0 0;
+#X restore 632 699 graph;
+#X text 658 495 -----------------------------------------------------------------------
+, f 72;
+#X text 1178 205 -----------------------------------------------------------------------
+, f 72;
+#X text 1178 495 -----------------------------------------------------------------------
+, f 72;
+#X text 138 205 -----------------------------------------------------------------------
+, f 72;
+#X text 138 495 -----------------------------------------------------------------------
+, f 72;
+#X obj 148 234 EDITION / INTERACTION;
+#X obj 666 234 TYPES DE BOX;
+#X obj 1438 238 TYPES DE SIGNAUX;
+#X text 1216 403 select > sup;
+#X obj 1215 371 DEBRANCHER;
+#X connect 7 0 9 0;
+#X connect 10 0 8 0;
+#X connect 15 0 39 1;
+#X connect 16 0 39 0;
+#X connect 18 0 15 0;
+#X connect 29 0 40 0;
+#X connect 39 0 17 0;
+#X connect 40 0 16 0;
