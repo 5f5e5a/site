@@ -3,642 +3,307 @@
   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>-</title>
+    <title>ㅤ </title>
+
     <style>
+	hr { 
+  height:1px; 
+  width:80%; 
+  border-width:0; 
+  background-color: black; }
+
+
 	body {
   font-family: Arial, sans-serif ;
   font-size: 13px;
-}
-	dialog { 
-  width: 50%; 
 	}
+	dialog { 
+  width: 60%; 
+	}
+
 	button { 
   font-family: Arial, sans-serif ;
   font-size: 13px;
-  float: ;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: white;
   padding: 10px;
   text-align: left;
+  cursor: pointer;
 	}
-	textarea {
-position: ; 
- float: ;
-  border: 2px solid black;
-	}
- th, td {
-        padding: 10px;
-        border: 2px solid black;
-     	}
-.justif {
-text-align: justify;
-  text-justify: inter-word;
-}
 
-.lexique {
+	.open{
+  width: 130px;
+  height: 84px;
+  position: absolute;
+  top:150px ;
+  left: 60%;
+  padding: 30px;
+	}
+
+ 	.index {
   position: fixed;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: white;  
-  width: 23%;
+  width: 150px;
   height: 250px;
   top: 300px ;
-  left: 10px;
-  font-size: ;
+  left: 30px;
+  border: 1px dotted black;
 
+	}
+
+	dialog{
+  border: 1px solid black;
+	}
+	.noclick {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
-
-.MOTS {
- cursor: pointer;
-}
-
-.rec{
-  border: 2px solid black;
-  color: black;
-}
-
-.stop{
-  border: 2px solid white;
-  color: white;
-}
-
-
 
     </style>
-  </head>
+ 	</head>
+
 
   <body>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- bouton1---------------------------------- -->
-<div><dialog id="PDD">
-
- <table style=" border-collapse:collapse"; border="0"; float="left"><tr>
-<td><button id="XPDD"><</button></td>
-<td><b> PdDaw(...en cours) :</b></td>
-<td> logiciel de son modulaire pour usage live, sur pure data</td>
-      </tr></table>
-
-<div style= float="left">
-<p>-----------------------------------</p>
-<p> téléchargement :</p>
-<a style="color: black;" href="link/to/your/download/file" download>PdDaw.pd</a>
-</br>
-<p>-----------------------------------</p>
-
-
-	+ setups exemples </br>
-	+ patchs en plus </br>
-	+ patchs poubelle </br>
-
-<p>-----------------------------------</p>
-</br>
-
-
-<textarea rows=1 cols=20>
-Goal >
-	equilibre daw/instrument
-	Usage performatif /live
-	logique modulaire > traitement d'enregistrement
-	usage moin normé/bridé 
-	- poussé + accesible
-	tout faire (pas de tiers nécessaire)
-	from scratch > modifiable accessiblement (ressources Pd)
-</textarea>
-
-<textarea rows=1 cols=20>
-Utilisation >
-bricoler assembler les élements > créer son outil </br>
-entré et sortie legendés sur chaques modules </br>
-types de signaux : son ; cv ; /trig? (+convertisseur) </br>
-un module = une fonction (+simple possible) qui a plusieurs application </br>
- </br>
-	
-</textarea>
-
-<textarea rows=1 cols=20>
-Liste des modules >
- </br>
-	:module central </br>
-	tableau = cellule d'enregistrement / sequencer / modulation </br>
-	 </br>
-	:modulaires </br> 
-	durée>lecture = lecteur de tab / modulation / phasor </br>
-	selecteur = montage son /  </br>
-	génerateur de séquence aléatoire </br>
- </br>
-	:effets  </br>
-	pitch shifter =  </br>
-	filtre lp bp hp </br>
-	 </br>
-	:monofonctions  </br>
-	convertisseur durée / tap tempo  </br>
-	convertisseur son/cv  </br>
-	visualiser  </br>
-	entrée son </br>
-	*sortie son + exporteur  </br>
-	mixer  </br>
-	 </br>
-	
-</textarea>
-
-
-</br>
-</br>
-
-
-  <table style=" border-collapse:collapse;" align="left" ; border="0";>
-      <tr>		
-        <td>PureData > <a style="color: black;" href="https://puredata.info/" target="_blank">https://puredata.info/ </a></br>
-"Pure Data (or just "Pd") is an open source visual programming language for multimedia."</br></td>
-</tr>
-<tr><td>
-<a style="color: black;"tuto basics.pd" download>TutoBasics.pd</a></br>
-<a style="color: black;"tuto enregistrement.pd" download>TutoEnregistrement.pd</a>
-</td></tr> 
-	<tr><td>
-<textarea rows=1 cols=20>
-Ressources >
-https://msp.ucsd.edu/
-</textarea>
-	</td></tr></table>
-
-
-
-
-
-</p>
-
-</dialog>
-<button id="OPDD"><b>PdDaw(...)</b></button></div> 
-<!-- ----------------------------------bouton1 -->
-
-</br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- bouton1---------------------------------- -->
-<div>
-
-<dialog id="0EX">
-
-
- <table style=" border-collapse:collapse"; border="0"; float="left"><tr>
-<td><button id="XE0"><</button></td>
-<td><b>EXERCICE D’ÉCOUTE SANS SON</b>
-</br>+MODE D’EMPLOI D’ÉCOUTE SANS SON
-</td>
-      </tr></table>
-
-</br></br></br></br></br></br></br></br>
-
-<a style="color: black;" href="#EX1" onclick="LX1()">>1</a></br>
-ÉCONOMISER L’ÉCOUTE</br>
-</br><a style="color: black;" href="#EX2" onclick="LX2()">>2</a></br>
-ÉCOUTER LE SON D’UN CONTEXTE</br>
-</br><a style="color: black;" href="#EX3" onclick="LX3()">>3</a></br>
-DÉFINIR UN PHÉNOMÈNE SONORE SANS SA FORME NI CAUSE</br>
-</br><a style="color: black;" href="#EX4" onclick="LX4()">>4</a></br>
-RÉÉCOUTER UN SON REPRODUIT</br>
-</br><a style="color: black;" href="#EX5" onclick="LX5()">>5</a></br>
-RÉÉCOUTER UN SON ENREGISTRÉ</br>
-</br><a style="color: black;" href="#EX6" onclick="LX6()">>6</a></br>
-DÉFINIR UN SON PUIS CHERCHER LE SON</br>
-</br><a style="color: black;" href="#EX7" onclick="LX7()">>7</a></br>
-TRAVERSER L’ESPACE ENTRE DEUX ENDROITS</br>
-</br><a style="color: black;" href="#EX8" onclick="LX8()">>8</a></br>
-CONTRIBUER INTENTIONNELLEMENT AU BRUIT DE FOND</br>
-</br><a style="color: black;" href="#EX9" onclick="LX9()">>9</a></br>
-ÉCOUTER ET MARCHER EN UN SEUL MOUVEMENT CONTINU</br>
-
-
-</br></br></br></br>
-<p>-----------------------------------</p>
-</br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-<div id="EX1"></br></br></br>
-
-<u id="MOTS" onclick="LX1()"><small><b>MOTS</b> : 
-ECOUTE ; OUTIL 
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-Écouter c’est faire l’écoute, c’est une action d’écoute. Faire l’écoute, c’est faire quelque chose : faire l’écoute. Faire avec quelque chose : Faire à l’aide de l’écoute. L’écoute s’utilise, est un outil, faire l’écoute c’est utiliser l’outil écoute. Faire l’écoute et faire à l’aide de l’écoute se confondent, l’écoute se fait à l’aide de l’écoute. </br>
-L’écoute est donc à la fois outil, utilisation d’outil, et but de l’utilisation d’outil.</br>
-L’écoute a pour but l’écoute, ne produit pas de résultats autres que l’écoute. Un outil dont la fonction est l’utilisation, ou bien dont l’utilisation est la fonction. Cela en fait un outil/fonction ou bien un outil/utilisation. Soit un outil que l’on n’utilise pas, soit un outil sans but. En remplaçant avec le terme écouter : soit écouter sans écouter, soit écouter sans vouloir écouter.</br>
-</br>
-Faire l’écoute c’est l’action, le geste, l’outil/utilisation et donc faire l’écoute sans vouloir écouter. Quant à l’intention, le but, l’outil/fonction, faire l’écoute sans écouter ; c’est performer l’écoute. </br>
-Performer l’écoute se différencie de faire l’écoute, comme le geste se différencie de l’intention. La performance est une intention et donc entraîne une action, consciente de cette intention. Performer l’écoute c’est écouter en ayant l’intention d’écouter, il s’agit d’une écoute active, activée par la performance. Par opposition faire l’écoute est écoute passive. À travers ce mode d’emploi il est question de performer l’écoute, car les exercices ont cette dernière pour but, l’exercice d’écouter revient à la performance de l’écoute donc à l’écoute active. L’enjeu des exercices de ce mode d’emploi est de permettre de tendre vers l’écoute passive.</br>
-</br>
-L’écoute passive ne se performe pas, il faut alors que l’écoute performée/active permette une fois « désactivée » une rémanence d’écoute, au-delà de la performance. Comme premier exercice pour tendre vers l’écoute il est donc plus simple de la désactiver plutôt que de l’activer. Ne pas écouter et ne pas vouloir écouter.</br>
-</br>
-</br>
-<b>EXERCICE D’ÉCOUTE</br>
-économiser l’écoute</b> </br>
-<small>Trouver une manière de ne strictement pas écouter pendant un laps de temps le plus long possible : 10secondes 1min 1h 1jour 1semaine 1mois.</small></br>
-	</p>
-</div>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-<div id="EX2"></br></br></br>
-
-<u onclick="LX2()"><small><b>MOTS</b> : 
-PERFORMER . ENTENDRE . SON
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-Désactiver l’écouter comme l’écoute non-performée, ou désactiver l’écouter comme performer la non-écoute. Dans le contexte de cet exercice c’est performer la désactivation de l’écoute, tout comme pour la performance de l’écoute il y a une intention, ici celle de ne pas écouter. L’intention détournée de l’écoute met de côté l’écoute active, définie par l’intention d’écouter. Si une écoute subsiste à la désactivation intentionnelle de l’écoute celle-ci sera écoute passive. Économiser activement l’écoute revient à économiser l’écoute active.</br>
-La mise en œuvre de cet exercice volontairement large se résume à l’intention de performer la non-écoute. La nature d’exercice d’écoute implique une performance, cette performance, et donc cette intention, se matérialisent en un état actif et constant quant à la réception du son. </br>
-De part leurs intentions communes, les différentes mises en œuvre de cet exercice aboutissent ou visent à aboutir en une performance de non-écoute. Il n’y a pas d’objectif d’écoute, pas écouter comme finalité ; désactiver l’écoute. L’écoute demeure outil et il faut ne pas utiliser cet outil, tout en le sachant présent. </br>
-Il en découle une écoute performée sans pour autant intention de performer l’écoute. La différence n’est pas entre l’écoute et la non-écoute, elle est entre l’écoute performée et la performance de l’écoute. L’activation de l’écoute et l’écoute active. Peu importe ce qui est désactivé tant qu’il y a désactivation, le but de l’exercice se trouve dans l’état actif.</br>
-</br>
-Les pistes d’actions concrètes en vue d’une désactivation de l’écoute, présentes dans l’énoncé, définissent en réalité des contextes sonores. Des contextes dans lesquels la performance de l’écoute est à première vue rendue difficile. Elle l’est de par la place du son ; l’absence de son, l’abondance de son ou la nature du son. Les actions citées peuvent se résumer à chercher respectivement le silence, le bruit, ou bien à entendre. À rechercher des contextes pour ne pas écouter. Ce qui compte est l’intention maintenue sur la performance. Ici la performance est dans l’état actif quant au contexte sonore, sa présence rendue consciente par la recherche/performance. </br>
-</br>
-Parmi les différentes pistes, celle d’entendre se distingue de par sa nature active. Entendre est une action, alors que le silence et le bruit sont plus explicitement assimilables à des contextes sonores. Il est envisageable d’écouter le silence, d’écouter le bruit, pas d’écouter entendre. Entendre est, comme écouter, un outil. Contrairement à écouter entendre n’est pas un but, c’est uniquement un outil, dont l’utilisation n’est pas la fonction. Ainsi entendre ce n’est pas avoir l’intention d’entendre. Entendre et écouter sont donc deux outils, utilisés pour la réception du son, dont les buts sont exclusifs. Entendre est une intention qui implique de ne pas écouter. Donc entendre comme performance/intention, exclut écouter comme performance/intention. </br>
-Ne pas pouvoir performer l’écoute reste différent de performer la non-écoute. Si la performance est intention alors performer la non-écoute ne peut pas passer par une autre intention. Performer la non-écoute en performant l’entente est une manière d’inhiber consciemment l’écoute. C’est un état actif qui détourne l’intention de la performance de l’entente. Entendre est un outil que l’on utilise pour une fonction, entendre pour ne pas écouter détourne l’outil entente. Donc entendre comme performance/intention, exclut tout autre performance/intention. Cette activation intentionnelle implique un état temporaire, là où l’écoute qui mène à l’écoute s’auto-nourrit, l’entente a et doit avoir un début et une fin. </br>
-</br>
-La performance quelle qu’elle soit a un début et une fin. Cet aspect de durée amène à poser une distinction primordiale dans la nature des sons.      </br>
-Les phénomènes sonores évoqués à partir d’ici le seront par la qualification de son événement ou bien de son non-événement. Le son événement est un phénomène sonore dont le début et/ou la fin sont conscientisés ; par opposition le son non-événement est un phénomène sonore dont le début et la fin ne sont pas conscientisés. Conscientisé pour faire la distinction que ces débuts/fin peuvent ou non exister physiquement ; ce qui importe est l’écoute. Ces notions d’événement et non-événement ne dépendent en aucun cas du contenu/nature du son en question. Ce qui défini l’événement c’est son absence, que celle-ci soit avant ou bien après ce dernier. L’absence du son crée le début ou la fin du son événement.</br>
-C’est de cette absence de son événement dont il est question dans les deux autres pistes de mise en œuvre de cet exercice : le silence et le bruit de fond. Ces deux contextes sonores se placent à juste titre en opposition au son événement, pour autant les deux termes ne sont pas synonymes. Le bruit de fond est absence de son événement, car il est absence d’événement, le bruit de fond ne commence ou ne fini pas, et le bruit de fond est sonore. Le bruit de fond est alors à considérer comme son nom l’indique, comme une couche sonore séparée de celle des événements, la hiérarchisation usuelle le plaçant « au fond ». Le bruit de fond est constant, constituant avec les sons événements périodiques la partie sonore du contexte sonore. </br>
-Le silence s’oppose au son-événement quant à la partie sonore du terme. En effet le silence est absence de son. Cette absence de son étant à considérer d’un point de vue de l’écoute et non physique. Le silence s’oppose donc également au bruit de fond, qui est sonore. Cette opposition met en évidence la nature d’événement du silence. Le silence est caractérisé par un début et/ou une fin et c’est en cela qu’il complète le son événement ; le silence est un événement non-sonore qui débute à la fin d’un événement sonore. Le silence et le son événement se succèdent en tant qu’événements et le bruit de fond demeure constant de par sa nature de non-événement. Il est possible qu’un son entendu comme bruit de fond jusque là devienne événement, ou bien inversement qu’un événement devienne non-événement ; le contexte se définit par l’appréhension, la perception à un instant donné.</br>
-Le silence est donc événement non-sonore, ce qui met en évidence son importance pour l’écoute sans le son. Derrière cette notion d’événement non-sonore et donc cette alternance avec le son événement, il y a l’attente de ce dernier. La conscientisation de l’événement implique de savoir que celui ci tend à une fin, et donc une relative attente de celle-ci. Le silence, défini en fonction du son événement, peut ainsi être considéré comme l’attente de son événement. Une attente qui ne traduit pas d’impatience, plutôt une connaissance de l’événement sonore à venir. Autrement dit le silence, bien que non-sonore d’un point de vue événement, est un potentiel sonore au sein du contexte sonore. L’écoute du silence est en cela un état d’attention au potentiel sonore.</br>
-</br></br>
-<b>EXERCICE D’ÉCOUTE</br>
-écouter le son d’un contexte</b> </br>
-<small>Choisir un élément non-activé non-sonore faisant partie du contexte, n’écouter activement que celui-ci. </br>
-Prolonger cette écoute 10secondes 1min 1h </small></br>
-</div>	
-</p>
-
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-<div id="EX3"></br></br></br>
-
-<u onclick="LX3()"><small><b>MOTS</b> : 
-SILENCE . EVENEMENT
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-La partie non-sonore du contexte est composée du silence. Un élément non-sonore du contexte ne produit ni son-événement ni son non-événement. Cet élément, tant qu’il n’est pas activé, reste silencieux, producteur de silence. </br>
-Il se dégage une différence notable entre écouter cet élément et n’écouter que cet élément. L’écoute de cet élément comme faisant partie du contexte sonore revient à l’écoute de ce contexte sonore et pas de l’élément en question. Étant non-activé et ne produisant pas de son événement, donc pas de potentiel événement, il ne constitue pas au sein du contexte le silence. Il constitue bien le bruit de fond. De part sa nature le bruit de fond est un son non-événement et surtout un phénomène sonore qui n’a ni forme ni cause, toutes deux impliquant début et fin. Ainsi définir par sa cause un élément constituant du bruit de fond revient à l’en extraire de celui-ci. L’élément non-sonore est écouté en tant que bruit de fond ; n’écouter que cet élément revient à lui soustraire sa place de bruit de fond. Une fois le non-sonore non-événement extrait du bruit de fond, sa place au sein du contexte sonore et donc son rapport à l’écoute change. </br>
-</br>
-L’écoute active est écoute performée, elle est événement. Si l’émission de son, ou bien dans ce cas de non-son est non-événement, il est possible de considérer la réception de ce même son/non-son comme événement. L’intention de réception est ce qui définit le son comme événement ; il est possible de substituer aux début et/ou fin du son, les début et/ou fin de l’écoute. </br>
-Le non-sonore non-événement une fois extrait du bruit de fond devient événement de par cette même extraction, qui témoigne d’une écoute active ; dont l’activation est événement. Ainsi dans la mise en œuvre de cet exercice, n’écouter que l’élément non-sonore non-événement, est événement en soi. Le silence est créé lors de la réception, l’écoute active créée le silence. Inversement la création de silence nécessite l’écoute active, il s’agit la d’une partie importante du contexte sonore avec laquelle l’écoute a, au-delà du lien de réception, un lien de création. C’est en cela que l’écoute est instrument du contexte sonore.</br>
-</br>
-Dans la mise en œuvre de cet exercice, l’écoute active se traduit par une action visant à forcer un précédent et écouter jusqu’à l’écouter. La création de précédent conscient passe par la dissociation de forme et cause, et ainsi l’attente d’un son dont la forme est connue, sans attente de cause. Le son-événement demeure tout en étant inclus au bruit de fond, par l’absence d’intention d’émission. C’est ensuite l’écoute active, la recherche de sa forme, qui fait réémerger ce son-événement à travers son absence et donc son silence. </br>
-Écouter le son d’un contexte revient à faire le son événement en bruit de fond potentiel, puis ce bruit de fond potentiel en silence à travers une écoute active. </br>
-</br>
-L’écoute action peut/doit se passer du son. L’écoute passive représente ce concept de ne pas écouter quelque chose, dans la non-intention, pas dans le fait non-sonore de ne pas écouter. C’est l’écoute non-événement, liée au bruit de fond. L’écoute active du bruit de fond lui attribue forme ou cause, la simple écoute performée attribue sa forme événement voire sa cause d’écoute. L’écoute comme instrument du contexte sonore à sa réception, une écoute qui n’a ni forme ni cause. Une écoute non-active, non-activée, non-performée, passive, qui n’a ni forme ni cause. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-Définir un phénomène sonore sans définir sa forme ni sa cause </b></br>
-</br>
-	</p>
-</div>
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-<div id="EX4"></br></br></br>
-
-<u onclick="LX4()"><small><b>MOTS</b> : 
-PRECEDENT . BRUIT DE FOND
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-Pour pratiquer ou du moins penser cette écoute ni de forme ni de cause, qui n’a donc ni forme ni cause, il faut pouvoir évoquer ce qu’il reste au-delà de forme et cause. Forme et cause ne sont pas opposés voir fortement liés. La cause est de l’ordre du précédent conscient, elle induit une forme. L’absence de cause peut donc être reliée à l’absence de précédent. La forme quant à elle est déjà en soit une abstraction de cause, ne se focalisant que sur la matière sonore. La forme dans son sens le plus simple, revient à l’événement. L’absence de forme revient donc à l’absence d’événement, le non-événement. </br>
-Ni forme ni cause se traduit donc ici comme non-événement sans précédent. Il reste la différence entre l’écoute de non-événement sans précédent, ou bien l’écoute en tant que non-événement sans précédent. </br>
-Non-événement sans précédent ; la définition d’un tel phénomène sonore se heurte à la notion de précédent, la simple définition créant le précédent. Il faut donc s’émanciper de l’intention. Le sans précédent implique de ne pas définir le son en tant que tel ; ni définir sa forme d’événement ni définir sa cause. Il faut définir les espaces et circonstances, pas ceux qui en sont cause, ceux qui forment le contexte. En opérant ainsi il n’est ni bruit de forme, ni bruit de cause ;  bruit de fond. </br>
-</br>
-La mise en œuvre de cet exercice demande de définir le phénomène sonore de bruit de fond. De réussir à le définir sans lui ôter sa place de bruit de fond. De définir ce que l’on écoute lorsque l’on écoute ni forme ni cause, non-événement sans précédent. </br>
-Ce qui reste est le contexte, le contexte comme définition du bruit de fond. Le lien convenu entre les deux termes est que le bruit de fond est le son du contexte, en cela le contexte définit le bruit de fond d’un point de vue sonore. Le contexte est par définition la somme des éléments qui le compose ; deux formes et causes constituent un contexte sans forme ni cause. </br>
-À partir de deux formes et causes, un aspect apparaît, le silence, potentiel sonore entre les deux sons-événements. Bien que présent avec un seul événement, la connaissance de deux événements potentiels rend le silence incertain. Il y a précédent d’écoute pour les deux sons, il n’y a pas de précédent de contexte, car le contexte lui se renouvelle. Le nombre de deux permet aussi la superposition, et compte tenu des précédents qui empêchent la combinaison de ces phénomènes en un seul son, permet la hiérarchisation. Bien qu’il ne s’agisse pas de bruit de fond, il y a bien un son événement et un son pouvant être dit de fond. La combinaison de ces sons dits de fond et de silence incertain, à une échelle plus grande, constitue le bruit de fond. La multiplicité de définitions de formes et cause entraîne à la création d’un contexte sonore contenant un bruit de fond. </br>
-L’abondance de formes et causes, abondance de son événement, permet de créer un non-événement sonore. Définir un phénomène sonore sans définir sa forme ou sa cause revient à définir des formes et des causes constituant un contexte sonore, qui n’est lui ni forme ni cause. </br>
-</br>
-L’écoute performée est action qui nécessite une intention. Il ne s’agit pas là d’une unique intention permettant une écoute constante, l’écoute est instrument d’un contexte ; ainsi chaque contexte sonore demande/créer une écoute qui lui est propre. </br>
-L’écoute ainsi liée au contexte est récurrente seulement si ce dernier l’est. Les contextes sonores se renouvelant constamment et l’écoute au sein même d’un contexte donné aussi, l’écoute ne peut que se renouveler. Ne peut que se renouveler donc ne peut pas se répéter. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-réécouter un son reproduit </b></br>
-<small>Choisir un son événement récurrent ou bien reproductible, l’écouter à chaque répétition. </small></br>
-</br>
-	</p>
-</div>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-<div id="EX5"></br></br></br>
-
-<u onclick="LX5()"><small><b>MOTS</b> : 
-UTILISATEUR·ICE
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-Avant la question du son et de l’écoute répétée, cet exercice fait faire l’écoute d’un son-événement, qui n’a pas été évoqué jusque là. Dans cette idée de reproduire un son, le début et la fin de ce dernier sont les termes mêmes de cette répétition, définissant un son événement. </br>
-</br>
-La reproduction peut être initiée par la personne qui écoute ou par une source extérieure. Pour le son produit par la personne qui écoute il faut écouter un son et de le produire. </br>
-La production est celle d’un son événement, découlant d’un geste. Ce geste témoigne d’une intention, intention de faire le son ; une intention de cause et/ou forme. Ainsi l’écoute est inhibée par un précédent conscient et non-sonore. L’état d’écoute n’est donc pas possible lors de la production d’un son événement découlant d’un geste de l’utilisateur. </br>
-La reproduction et donc la répétition construit le bruit de fond. Ici la répétition a pour finalité elle-même et pas le geste initial. À travers cette répétition, reproduction de son de geste d’intention, il y a la perte de ces derniers. Passer du son événement au bruit de fond c’est l’instrument comme outil à usage non-permanent, l’intention d’émission qui se dégrade ou s’aggrade en intention d’écoute. </br>
-</br>
-Le non-événement, dans cet exercice, est la reproduction de source externe et absence d’intention d’émission. Cette mise en place est liée au bruit de fond et tend à en extraire un phénomène sonore isolé répété. La subjectivité de l’isolation du son choisi par l’utilisateur doit respecter la recherche de son hors cause et forme. Dans cette configuration l’aspect performatif revient entièrement à l’utilisateur et à son écoute dont la répétition créer celle du son. Cette inversion de l’écoute qui créer le son implique une relation de causalité, la répétition de l’écoute permet de reproduire le phénomène sonore. </br>
-</br>
-Dans ces différentes mises en œuvre l’écoute déjà présente peut perdurer à travers sa répétition, ou bien émerger quand un son événement devient progressivement bruit de fond. Cette écoute passive à travers une répétition active du son, tant lors de son émission que de sa réception pose la question de la relation inverse ; d’une répétition passive. </br>
-</br>
-Il est possible de lire deux fois les données enregistrées d’un son, ainsi un son peut être deux fois les mêmes vibrations émises. L’écoute est produit d’un précédent. Ici le précédent est dans l’émission de forme identique et de cause identique à savoir l’enregistrement en lui-même, un précédent auto généré. </br>
-Le concept d’écoute documentaire, qualifie une écoute dans sa dimension première d’outil. Outil que l’on utilise donc, dans un but de perception. L’écoute documentaire est une démarche de recherche, c’est une écoute qui tend à un but autre que l’écoute en elle-même. L’écoute documentaire seule, ou bien la première écoute documentaire, est une écoute performée, car le contexte ne se répète pas. Dans l’écoute documentaire d’enregistrement le contexte sonore se répète, ainsi les sons sont à chaque écoute moins écoutés, car inclus dans un précédent d’écoute. L’écoute documentaire est un processus qui s’auto-dégrade. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-réécouter un son enregistré </b></br>
-<small>Choisir un son enregistré ou l’enregistrer, l’écouter à chaque répétition </small></br>
-	</p>
-</div>
-
-
-</br></br>
-
-
-  <p><button class="rec"
-	id="record">Enregistrer</button><br/>
-    <button  class="stop"
-	id="stopRecord" disabled>Stop</button></p>
-  <p><audio id="recordedAudio"></audio></p>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-<div id="EX6"></br></br></br>
-
-<u onclick="LX6()"><small><b>MOTS</b> : 
-PRECEDENT
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-La différence de l’enregistrement est d’avoir un lieu d’émission qui n’est pas lieu émetteur. </br>
-L’enregistrement est événement dans son procédé, témoignant d’une intention de début et de fin aussi bien lors de l’acte d’enregistrer que lors de la retransmission de cet enregistrement. Cet acte a donc pour produit un son événement, n’ayant pour contexte que le média sur lequel il est enregistré. L’enregistrement est lors de son émission superposé à un contexte d’écoute auquel il n’appartient originalement pas. </br>
-</br>
-Dans l’écoute de son-événement enregistré/d’enregistrement événement, Le précédent conscient, tant d’un point de vue du geste de lire l’enregistrement que de la forme connue du son, conditionne une écoute d’attente et pas de potentiel. Cette écoute peut s’apparenter à l’écoute documentaire ou bien à l’écoute musicale selon la nature du son, c’est une écoute qui ne permet pas au silence de prendre sa place. C’est une écoute qui tend à entendre. </br>
-</br>
-La répétition peut amener le son événement, ici enregistrement, au bruit de fond. L’écoute d’enregistrement comme écoute de bruit de fond inclut automatiquement l’enregistrement au sein du contexte sonore. Là où l’enregistrement événement crée une dissonance avec le silence, l’enregistrement bruit de fond le complète. Une mise en œuvre permet de s’affranchir du contenu de l’enregistrement et de créer un véritable bruit de fond enregistré. Le son constituant le bruit de fond enregistré peut être diffusé au sein du contexte de sa captation ; il s’agit d’une amplification d’une partie du contexte sonore, qui souligne l’acoustique de l’espace dans lequel se trouve le contexte sonore. Une telle spatialisation du son permet de faire passer au second plan la nature enregistrée du son pour laisser le phénomène sonore seul, et ainsi engager une écoute. </br>
-Ce bruit de fond acoustique, bruit du contexte, porte en lui un potentiel pour l’écoute. Mis en avant avec l’enregistrement ce phénomène reste présent sans ce dernier. Cette notion de phénomène acoustique au précédent inconscient, ramène à la pré-écoute. Le rapport passif à l’écoute, inconscient, dans une réception du son. Ce rapport premier au phénomène sonore se place en amont de tous les termes utilisés jusqu’ici, il constitue l’acoustique sans autre précédent. L’écoute est donc une tentative de pré-écoute, c’est pour cela que le précédent l’inhibe. Créer une écoute nouvelle vide de précédent, entraînerait et imposerait un état de pré-écoute. De manière inévitable cette écoute nouvelle ne le reste pas, elle crée involontairement un précédent. Cette notion de précédent et d’écoute comme phénomène éphémère donne un sens nouveau à économiser l’écoute. L’écoute utilise le contexte sonore ; a besoin d’utiliser/consommer un contexte sonore. </br>
-</br>
-Écouter c’est donc écouter pour la première fois. Il faut faire. Faire demande de savoir faire, faire sans avoir appris, sans précédent. Écouter sans précédent, activer l’écoute sans l’avoir activée, ou bien écouter sans activer l’écoute. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-définir un son puis le chercher </b></br>
-<small>Choisir un son, avec ou sans précédent, se déplacer dans l’espace jusqu’à l’écouter. ne pas chercher la cause ou bien la forme </small></br>	</p>
-</div>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-<div id="EX7"></br></br></br>
-
-<u onclick="LX7()"><small><b>MOTS</b> : 
-CONTEXTE . CONTEXTE SONORE
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-Dans la mise en œuvre de cet exercice, la première partie consiste à « définir un son ». Définir c’est créer le précédent conscient, projeter une écoute sans causes et formes, afin de définir un son propre à l’écoute. ; un son pas encore écouté.. L’exercice de définition est conditionné par l’idée de « chercher » qui implique de définir un son sans définir sa cause, et donc la localisation. </br>
-</br>
-Cette recherche est indissociable de l’écoute. Bien qu’en apparence proche de l’écoute documentaire, la recherche de son est à différencier de la recherche dans le son. Le son est son propre contexte, l’écoute aussi. L’écoute au sein du contexte sonore est une recherche de son, l’écoute a pour finalité l’écoute. Tandis qu’une recherche dans le son implique une immersion dans le contexte sonore dans un but autre que l’écoute. Le contexte sonore étant contexte, un espace dans lequel l’utilisateur se trouve, cette notion de recherche est à la fois présente à la réception du son, écoute, qu’à la place de l’utilisateur au sein de l’espace, écoute. </br>
-Il y a une différence entre contexte et contexte sonore. Pas d’opposition, deux contextes pas parfaitement superposés. Le déplacement permet la conjugaison de ces espaces, la création de contextes composites. Ce déplacement au sein des contextes permet un renouvellement qui prolonge la pré-écoute, qui prolonge l’écoute. Les mêmes sources sonores prennent différentes fonctions au sein du contexte sonore. Un bruit de fond évolutif peut tendre à l’événement. Chaque précédent, chaque son trouvé initie une recherche plutôt que de la conclure. C’est donc l’intention et l’action dépourvue de but qui amène à un résultat ; le déplacement et l’écoute se renouvellent mutuellement. </br>
-</br>
-La marche prend un sens proche de celui associé à l’écoute. Il existe un parallèle entre écoute/contexte et marche/espace. La différence réside dans la définition exclusive du contexte, qui s’oppose/complète l’écoute, tandis que le déplacement compose l’espace. Définir un son puis le chercher c’est donc une recherche de son dans le son, c’est l’écoute comme marche sans destination. La destination devient un endroit, un espace défini. De la même manière qu’un son une fois défini ne peut plus être écouté. Écouter fait écho à traverser le non-endroit, l’espace. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-Traverser l’espace entre deux endroits </b></br>
-<small>définir deux endroits, traverser à l’aide de la marche et en un mouvement l’espace les séparant</small> </br>
-	</p>
-</div>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-
-
-
-<div id="EX8"></br></br></br>
-
-<u onclick="LX8()"><small><b>MOTS</b> : 
-ESPACE . MARCHE . ENDROIT
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-Afin de mettre en œuvre cet exercice, il est nécessaire de trouver/définir l’espace à traverser. L’espace même s’il n’est pas opposé à l’endroit peut être défini à travers celui-ci : où il n’y a pas d’endroit il y a espace. Ou bien où il y a espace il n’y a pas endroit. L’endroit étant précédent, là où il y a espace il n’y a pas précédent. Les problématiques sont similaires à l‘écoute de bruit de fond en l’action de recherche sans précédent. </br>
-La pseudo opposition avec endroit permet, à défaut de chercher l’espace sans précédent, de chercher celui avec précédent, endroit, afin de pouvoir en sortir et ainsi tendre vers l’espace. Sortir de l’endroit, entrer dans l’espace. Trouver l’endroit est plus simple. Dans cet exercice il en faut deux distincts. La distinction entre les deux endroits, leur frontière, est l’espace. La distinction entre les endroits se trouve dans la nature du précédent qui les définit : le premier endroit le point de départ est un constat, c’est l’endroit présent, le contexte. Le second est la destination, le but, l’intention. C’est celui-ci qui détermine l’action le faire, c’est le précédent conscient du geste. L’action se fera par le biais de l’outil de la marche. </br>
-Afin de sortir ou bien d’entrer, il faut une frontière. L’endroit doit ainsi être défini afin que celui-ci ne suive pas le mouvement. Il faut aller d’un endroit figé à un autre. Un endroit figé, un espace lui aussi figé. Pour faire cet exercice il faut faire un constat de l’endroit de départ et le figer, définir l’endroit destination et le figer. Ensuite il est possible de traverser l’entre-endroit. </br>
-</br>
-En procédant de la sorte le risque est de prévoir l’espace. Prévoir l’endroit donc prévoir la sortie de l’endroit donc prévoir l’entrée dans l’espace donc prévoir l’espace. C’est le problème de l’espace figé ; figer l’espace c’est le définir et ainsi définir son précédent conscient. L’espace figé est comme endroit. Donc sortir de l’endroit pour entrer dans l’endroit, après avoir traversé l’endroit qui devait être espace. </br>
-Il n’en reste pas moins des endroits distincts ; endroit, et espace figé endroit lui aussi. La traversée de l’entre ces deux endroits est une action de sortir de l’endroit. La frontière est espace, l’espace est traversé, pas l’espace figé. </br>
-L’espace est frontière, l’espace possède une frontière, sinon impossible de le traverser. L’opposition endroit/espace laisse présumer la frontière comme réciproque, d’un côté espace de l’autre endroit. La frontière délimite l’endroit et l’espace est à penser dans un plan parallèle. Hors de l’endroit, il n’y a plus l’endroit ; l’espace alors présent n’a pas pour autant débuté lors du franchissement de la frontière, la simple notion consciente de frontière créant un endroit nouveau à la place de l’espace. </br>
-</br>
-Il faut sortir d’un endroit sans passer par la frontière de l’endroit. Penser deux endroits moins distincts, deux endroits entre lesquels il est impossible de définir une frontière espace. Sortir d’un endroit pour rentrer dans le même endroit, deux endroits qui ne font qu’un endroit. Traverser sans sortir dans un premier temps, si l’espace n’est pas concerné par la frontière de l’endroit ; traverser l’espace sans quitter l’endroit. L’espace n’est plus défini. Un oubli forcé du précédent, sans intention préalable. L’espace devient inévitablement endroit une fois traversé de cette manière.  </br>
-</br>
-L’outil est la marche, donc la marche fait l’espace, et fait l’espace en endroit. Traverser l’espace revient à chercher à ne pas créer d’endroit. L’endroit est espace avec précédent, l’espace le produit de la marche. La marche construit/constitue les espaces. La marche est outil de lecture et d’écriture de l’espace. Lecture et écriture sont liées à la notion de précédent, la lecture nécessitant une écriture qui la précède. Ainsi la marche qui ne crée pas d’endroit est une marche sans lecture, car sans but d’écriture. La marche comme outil seul de l’écriture. Cette idée de déambulation hasardeuse se heurte à la réalité de la réciprocité de cette notion de précédent ; l’écriture ne se fait pas sans lecture qui la précède. Ainsi la vraie différence entre écriture et lecture dans la marche se trouve dans la nature de ces actions. Là où l’écriture relève de la trace, du produit, la lecture elle, est de l’ordre de l’intention. </br>
-La lecture de l’espace est la fonction de la marche, l’écriture de l’espace est ce qui fait l’espace en endroit pour une prochaine lecture. La marche sans écriture traverse un espace sans en faire un endroit. </br>
-Non pas que cette approche ne laisse pas de traces, les traces qu’elle laisse ne sont pas écriture ou pas écriture qui a vocation à être lue. Donc pas d’intention d’écriture en vue d’une future lecture. La marche sans écriture est marche sans prise en compte de l’écriture, car sans besoin de précédent conscient. Cette marche laisse des traces sans les chercher par la suite. En cela la lecture de trace ne joue pas sur le précédent, et la marche peut traverser l’espace en le changeant, sans y écrire du langage de la marche pour autant. L’espace traversé reste espace, un autre espace, l’espace n’est pas figé. </br>
-</br>
-La marche sans écriture est propre à l’espace, chercher à traverser l’espace ou bien chercher la marche sans écriture sont en cela confondus. La marche est mouvement, la traversée aussi ; sans mouvement l’espace n’est pas/plus. Ou plutôt l’endroit est là, et prend le pas sur l’espace. L’arrêt créer l’endroit, le mouvement crée l’espace ; laisse l’espace espace. L’arrêt est traduit par la création d’un précédent de l’espace. Une lecture des écritures de l’espace. Pour maintenir la traversée de l’espace il suffit donc de rester en mouvement. De renouveler constamment la marche afin de ne pas créer ou lire de précédent. Pour revenir au termes de l’exercice, il faut réussir à rester entre deux endroits, sans en créer d’autres. </br>
-</br>
-Rester entre deux endroits, comme un arrêt, rester immobile. Faire en un mouvement peut aussi bien être l’action ou l’entre action, l’immobilité. Traverser immobile, pas incompatible avec la traversée de l’espace au sein de l’endroit. Ici encore cette action est définie par ses frontières, l’immobilité commence et finit. L’immobilité est non-action, en cela elle se différencie de l’action d’arrêt. Entre deux actions d’arrêt possibilités d’être immobile. Entre deux création d’endroits possibilité de traverser un espace. Un espace non-figé car deux endroits non-figés. C’est créer un endroit, créer un espace à quitter. Plus que le mouvement ou l’immobilité c’est la marche qui est outil de l’espace. </br>
-</br>
-Ici la marche sans mouvement, l’écoute sans son, pas d’interchangeabilité, deux notions qui se complètent. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-contribuer intentionnellement au bruit de fond</b> </br>
-<small>Choisir un contexte sonore dans lequel prendre parti active en tant que bruit de fond.</small> </br>
-	</p>
-</div>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-<div id="EX9"></br></br></br>
-
-<u onclick="LX9()"><small><b>MOTS</b> : 
-FAIRE . CONTEXTE
-</small></u>
-</br></br>
-
-<div class="justif">
-	<p>
-La mise en œuvre de cet exercice met en lien l’intention et le bruit de fond. Contribuer définit le rapport au son et au contexte sonore, les deux principales possibilités étant intention dans l’émission de bruit de fond ou bien l’intention dans la réception de bruit de fond. Contribuer au bruit de fond ou contribuer au contexte sonore. La réception de bruit de fond a déjà été en partie évoquée. L’écoute active écoute dans le bruit de fond, en y extrayant des événements. C’est une recherche de son dans le son ; cette écoute active ne contribue donc pas au bruit de fond. </br>
-</br>
-Contribuer au bruit de fond, faire du bruit de fond. L’instrument du faire est l'écoute, le faire comme faire, le faire comme écouter. </br>
-Il faut choisir un contexte sonore dans lequel prendre part active à l’émission de bruit de fond. Même en cherchant le faire comme faire, il reste dans le choisir un contexte sonore un besoin d’écoute. Une écoute non-active car il est question de bruit de fond ; il faut réussir à choisir un contexte sonore et un bruit de fond sans les écouter activement. Pour cela, choisir des causes et formes multiples, dans le but de ne pas activer l’écoute. Il faut faire partie du contexte. Ainsi les lieux d’émission et lieu émetteur se superposent, être émetteur demande d’être le lieu émetteur, ainsi que d’être dans le lieu d’émission. Ce tout constitue le contexte sonore. </br>
-Pour la mise en œuvre de cet exercice, la première étape est de définir de manière spatiale le contexte sonore, afin de se placer au sein de ce dernier. Cette considération permet de simplifier le processus de choix du contexte sonore, en prenant le raisonnement à l’envers il est possible de se déplacer et en suite définir spatialement le contexte sonore. Ainsi il n’y a pas écoute dans le choix du contexte sonore et donc du bruit de fond. Il n’y a pas intention sonore dans le choix du contexte sonore, cette non-utilisation de l’écoute à des fins sonores tend vers l’écoute passive. </br>
-Une fois le déplacement terminé et donc l’intention quant à l’exercice sonore activée, l’écoute passive n’est plus, le risque étant d’écouter activement le contexte et le bruit de fond. Faire le bruit de fond sans écouter le bruit de fond. Faire le bruit de fond reste émission, un son qui se veut compris dans un phénomène sonore sans écouter ce dernier. Ici la nature événement, à travers l’écoute événement, des sons qui composent le bruit de fond peut être retournée afin de considérer que l’ajout ou la soustraction d’un événement ne change pas la nature du bruit de fond. Reproduire intentionnellement un son événement écouté, extrait du bruit de fond, pour contribuer au bruit de fond. La somme d’événements peut être bruit de fond. </br>
-Là est la limite du faire comme faire en vue du sonore ; l’écoute est instrument du bruit de fond. Ainsi cette mise en œuvre de l’exercice bien qu’elle puisse faire sens en théorie se heurte à l’écoute du geste. Faire un son comme un son que l’on écoute, c’est faire un son que l’on écoute, un son que l’on écoute est son-événement et n’est pas bruit de fond. </br>
-Il faut faire un son que l’on n’écoute pas, comme un son que l’on n’écoute pas. Faire le faire sans écouter. Le non-événement sans précédent, ni forme ni cause pour éviter le geste sonore. Éviter le sonore. Faire un non-événement sans précédent n’est pas possible ; plutôt faire un contexte, dans le sens d’une multitude de causes de précédents et de silences. Il y a bien une intention, non-sonore, et surtout une intention potentielle. </br>
-</br>
-En prenant la mise en œuvre de l’exercice ainsi, il y a premièrement une définition spatiale du contexte sonore amenée par un déplacement sans écoute active, puis une définition/création d’un contexte sonore intentionnel, impliquant donc une écoute active de gestes non-sonores. </br>
-Cette écoute active laisse le pas à un état attentif au potentiel sonore, sans attente, car sans précédent sonore. L’écoute n’est pas sonore, ici l’intention n’est pas dans l’écoute elle est dans le faire. L’intention dans le faire permet de désactiver l’écoute, une non-utilisation de l’écoute, écoute passive. </br>
-Ce faire reste lié à l’écoute bien que détaché du sonore. L’intention de faire un son sans faire de son passe par l’écoute non-sonore de celui-ci ; l’intention est sonore, ne fait pas de son. Créer un contexte sonore, et donc un bruit de fond. Cette création de contexte sonore se superpose au contexte non-écouté, superposition de contexte en tant qu’addition. Doubler les contextes n’est pas une complexification d’un seul contexte il s’agit bien là de deux natures de contextes sonores différentes et complémentaires en vue d’une écoute passive. Le contexte évoqué en premier est le fruit d’une intention de non-écoute, d’une non-utilisation de l’écoute afin d’être dans un contexte sonore sans l’écouter. L’intention est détournée de l’écoute vers la cause et forme non-sonore du contexte. Le deuxième contexte évoqué est le fruit d’une intention d’auto-création, un précédent conscient de geste qui permet une écoute active non-sonore. Ces deux contextes, et intentions quant aux contextes, se conjuguent et se succèdent afin de conserver un état actif qui n’est pas juste une écoute active. </br>
-</br>
-Il n’est finalement ni question d’intention d’émission ni de réception de bruit de fond ; plutôt de non-émission et non-réception. Cette non-utilisation d’outil permet le positionnement au sein du contexte préexistant, ainsi que la création intentionnelle d’un contexte sonore. L’intention est de faire partie du contexte et de faire contexte. </br>
-Cet état d’écoute passive avec une intention et donc une partie active est celui nécessaire à une émission sonore ; l’intention maintenue d’être présent se traduit par la possibilité, le potentiel, de pouvoir faire, sans forcement faire. Cette intention ajoutée aux notions constituant le contexte sonore évoquées dans l’exercice précédent, de potentiel non-sonore sans précédent, permet d’entrevoir une écoute passive. </br>
-</br>
-A travers cet exercice, contribuer au bruit de fond intentionnellement est à la fois/ni le faire, à la fois/ni l’écouter. L’intention se place dans le non-sonore. Aussi le choix d’un contexte sonore importe peu, car il n’est finalement pas possible de se greffer intentionnellement à un contexte, tant il n’est ni possible de l’écouter de manière sonore active donc de le définir, ni d’y ajouter du son intentionnellement. La création non-sonore et la non-écoute des contextes créent un contexte hybride produit d’intention. Faire bruit de fond ; se déplacer et reproduire cet exercice de manière continue. </br>
-La marche comme instrument du contexte, de l’écoute passive. </br>
-</br>
-<b>EXERCICE D’ÉCOUTE </br>
-écouter et marcher comme un seul mouvement continu </b></br>
-<small>écouter quand la marche stoppe et marcher quand l’écoute stoppe, sans jamais ni superposer les deux ni avoir de moment sans l’un des deux </small> </br>
-	</p>
-</div>
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="lexique">
-<b>
-LEXIQUE </b></br>
-+NOTE
-<p id="LX"class="justif"> 
-Ce texte a pour but de faire faire l’écoute. Pas écouter, ni faire l’écoute, faire faire.</br>
-Faire faire écouter parce que faire écouter ne fonctionne pas.
-Pour faire faire, des exercices d’écoute sans son ; parce que l’écoute sans le son c’est l’exercice de faire l’écoute. 
-Le mode d’emploi ne décrit pas les résultats des exercices. </br>
-Un lexique permet d’appréhender les exercices avec les définitions établies des mots, ces définitions sont accessible en cliquant sur les <u>Mots</u>.</p> 
-</br></br></br></br></p></div>
-
-</div>
-</br>
-</dialog>
-
-
-<button id="EX0"><b>EXERCICE D’ÉCOUTE SANS SON </b>
-</br>+MODE D’EMPLOI D’ÉCOUTE SANS SON </button>
-</div> 
-<!-- ----------------------------------bouton1 -->
-
-</br>
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="framapadref" style= "color:black"><b>[RESSOURCES]</b></a>
-<!-- ----------------------------------bouton1 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<pre id="construct">
-░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░        ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓███████▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░   ░▒▓█▓▒░   ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░       
-░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
+<!-- ascii ///////////////////////////////////////////////////////////////// -->
+
+<div class="noclick" style="position:fixed; top: -15px; left: 0px">           
+<pre>
+░░░░░░▒▒▒▒▒▒▓░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓░░░░░░▒▒▒▒▒▒▓░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓ ▓▓░░░░░░▒▒▒▒▒▒▓▓▓░░░░░░▒▒▒▒▒▒▓░░░░░░▒▒▒▒▒▒▓ ░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓ ░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓░░░░░░▒▒▒▒▒▒▓░░░░░░▒▒▒▒▒▓
+▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░▒▒▒▒▒▒▓▓▓▓ ░░░░░░▒▒▒▒▒▒▓▓▓░░░░░░▒▒▒▒▒▒▓░░░░░░▒▒▒▒▒▒▓ ░░░░░░▒▒▒▒▒▒▓▓▓░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓░░░░░░▒▒▒▒▒▒▓░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ░░░░░░▒▒▒▒▓▓ ░░░░░░▒▒▒▒▒▒▓▓▓▓▓
 </pre>
+
+
+<pre style="position:fixed; top: -130px; left: 10%;">
+                                                                   .                      .         
+           .                                                  .                        .           .
+  .            .      .                   .                         . ..   .    .    .              
+   .                      .            .      .   .           .                             .      .
+             .                                                  .                      .            
+                  .                  .    .       .           .          .                          
+  .   .                                                ..                      .                    
+                          .                        .    .       .                   .             . 
+  .                                     .===---------=++#:    .                                     
+                                     .=*.                .:*#+:.           .                        
+        .              .    .      .==.                       -+:.        . .           .           
+       .  .      .     .  . .   ..=+.                           +:                                  
+                             .  -=                               =-.            .                   
+        . ..           .      .==    .                   ..       -=.   ..           .              
+                           . :+.                               .   .+-.                             
+  .                         .*                      .                -=          .                  
+   .    .   .  .    .. .    :=       .                               -=                           . 
+        .                 . :-                             .         :-                             
+         .    .           . :-.              .                       :-       .         . .         
+                            :=   .                                    *                        .    
+           .     .          .*.     .       .             .         ..*         .                   
+                             --     .                .   .           -=     .      .    .      .    
+              .   .          .+-               .         .  .        +.    ..    .       .          
+                               #-.  .                              :#.         .               .    
+         .    .                 .=+.                             :+:.                               
+   .                           .  .:#:     .    .  .         . .+:.    .               .    .       
+                .     .      .       .===.  .           .   .=+:.    .              .               
+                      .                 ..:#+.           .-%:..                       .             
+     .                                       ..-++=-====-.                                          
+    .             .   .    .        .         .     ...                                        .    
+                                         .          .                                               
+                                  . .           .             .                .             ..     
+      .          .      .      .        .     .                     .       .                       
+    ..     .                                                            .                           
+                    .                 .  ..                                    .         . .        
+ .                . .            .                     .             . .         .                  
+                  .               .  .                                                   .          
+ .             .                   .      .                             .    . .            .       
+     .                  .                      .    .                              .                
+                 .        . .                  . .                       .                ..        
+             .        .                            .                    .                     .     
+                                    .    .                  .    .                             .    
+                .                  .    .                                                           
+            .   .                   .  .            .            ..                      .  .       
+     .                  .                .                       .        .           .        .    
+              .     .           .                   .         .                    . .              
+                                                    .   .                .         .              . 
+              .  . .  .          .                       .                                ..       .
+ .                                                                                                  
+</pre>
+</div>
+
+<p style="position:fixed; bottom: -5px; right: 5px";>
+[2024] [9ko]
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- description///////////////////////////////////////////////////////////////// -->
+
+
+<textarea rows=30 cols=10 style="position:absolute">
+... 
+description jsp blabla
+</textarea> 
+
+
+
+
+
+
+<!-- ressources///////////////////////////////////////////////////////////////// -->
+
+
+
+<div style="position:fixed; top: 2%; left: 20%";>
+<a style="color: black"; href="https://semestriel.framapad.org/p/ressources-a83p" target="blank">
+<pre>
+ __   ___  __   __   __        __   __   ___  __  
+|__) |__  /__` /__` /  \ |  | |__) /  ` |__  /__` 
+|  \ |___ .__/ .__/ \__/ \__/ |  \ \__, |___ .__/ 
+</pre>
+</a></div>
+
+</br></br></br>
+
+
+
+
+<!-- ex///////////////////////////////////////////////////////////////// -->
+
+
+<div style="position:fixed; bottom: 10px; left: 50%";>
+<a style="color: black ;text-decoration: none"; href="EX.html">
+<pre>
+ _______________
+! exercice----- !_
+! d'écoute ---- ! !_
+! sans   ------ ! ! !_
+! son-- ------- ! ! ! !
+!      ________________
+! ----! lexique------ !
+! ----! ------ ------ !
+! ----! ------ ------ !
+! ----! ------ ------ !
+!_____!      ---      !
+ !____! ------ ------ !
+  !___! ------        !
+   !__! ------        !
+    !_! ------        !
+      !_______________!
+</a></pre></div>
+
+
+
+
+<!-- boutton titre///////////////////////////////////////////////////////////////// -->
+
+<button id="O0"; class="open"><b>PDpatches </b>
+<pre>
+outils son/music
++tuto/ressources
+</pre>
+</button>
+</div> 
+
+
+
+
+<!-- PDpatches ///////////////////////////////////////////////////////////////// -->
+
+
+<!-- bouton < ---------------------------------- -->
+<div><dialog id="0" style="position:; top: 10%">
+
+<button id="X0" style=" position:fixed ; left: 18%"><</button>
+</br></br></br>
+
+<!-- contenu---------------------------------- -->
+
+<hr>
+<div id="P1"; style="text-align:center"><small>!.PDDAW</small></div>
+
+
+	<p>
+<b> PDDAW v1</b>
+<a href= > pddaw v1.pd</a> </br>
+<small> [experimental modular daw]</small>	 
+	</p></br></br>
+
+<hr>
+<div id="P1"; style="text-align:center"><small>)))))RESSOURCES((((((</small></div>
+
+
+	<p>
+<b> TITRE DU PATCH</b>
+<a href="PDDAW.pd" >>lien</a> </br>
+<small> description [...]</small>	 
+	</p></br></br>
+
+<hr>
+<div id="P1"; style="text-align:center"><small>.....................................................EN COURS</small></div>
+
+<p>
+<b> TITRE DU PATCH</b>
+<a href="lien" >>lien</a> </br>
+<small> description [...]</small>	 
+	</p></br></br>
+
+<hr>
+<div id="P1"; style="text-align:center"><small>¤ REC ¤</small></div>
+
+<p>
+<b> TITRE DU PATCH</b>
+<a href="lien" >>lien</a> </br>
+<small> description [...]</small>	 
+	</p></br></br>
+
+<hr>
+<div id="P1"; style="text-align:center"><small>+°+°FX°+°+</small></div>
+
+<p>
+<b> TITRE DU PATCH</b>
+<a href="lien" >>lien</a> </br>
+<small> description [...]</small>	 
+	</p></br></br>
+
+<hr>
+<div id="P1"; style="text-align:center"><small>==DED==</small></div>
+
+<p>
+<b> TITRE DU PATCH</b>
+<a href="lien" >>lien</a> </br>
+<small> description [...]</small>	 
+	</p></br></br>
+
+
+
+<!-- index///////////////////////////////////////////////////////////////// -->
+
+<div class="index">
+<b>
+PureData </b></br>
+<p> <a  href="https://puredata.info/" target="_blank">https://puredata.info/ </a></br>
+<small>"Pure Data (or just "Pd") is an open source visual programming language for multimedia."</small>
+<hr>
+<a href=LIEN>TutoBasics.pd</a></br>
+<a href="tuto enregistrement.pd" download>TutoEnregistrement.pd</a>
+</p> 
+</div>
+</br>
+</dialog>
+
+
+
+
 
 
 
@@ -657,118 +322,19 @@ Un lexique permet d’appréhender les exercices avec les définitions établies
 
 
 
-
-
-
     <script type="text/JavaScript">
 
-<!-- bouton1---------------------------------- -->
+<!-- boutons---------------------------------- -->
       (function() {  
-             var dialog = document.getElementById('PDD');  
-             document.getElementById('OPDD').onclick = function() { dialog.show();  
+             var dialog = document.getElementById('0');  
+             document.getElementById('O0').onclick = function() { dialog.show();  
          }; 
-           document.getElementById('XPDD').onclick = function() { dialog.close();  
+           document.getElementById('X0').onclick = function() { dialog.close();  
  }; 
    })();
-<!-- ----------------------------------bouton1 -->
-
-
-
-
-
-
-
-
-  navigator.mediaDevices.getUserMedia({audio:true})
-    .then(stream => {handlerFunction(stream)})
-
-    function handlerFunction(stream) {
-      rec = new MediaRecorder(stream);
-      rec.ondataavailable = e => {
-        audioChunks.push(e.data);
-        if (rec.state == "inactive"){
-          let blob = new Blob(audioChunks,{type:'audio/mp3'});
-          recordedAudio.src = URL.createObjectURL(blob);
-          recordedAudio.controls=true;
-          recordedAudio.autoplay=true;
-          sendData(blob)
-          }
-        }
-      }
-    
-    function sendData(data) {}
-
-      record.onclick = e => {
-        record.disabled = true;
-        record.style.color = "white";
-	  record.style.border = "2px solid white";
-        stopRecord.disabled=false;
-        stopRecord.style.color = "black";
-	  stopRecord.style.border = "2px solid black";
-        audioChunks = [];
-        rec.start();
-        }
-      stopRecord.onclick = e => {
-        record.disabled = false;
-        stop.disabled=true;
-        record.style.color = "black";
-	  record.style.border = "2px solid black";
-        stopRecord.style.color = "white";
-	  stopRecord.style.border = "2px solid white";
-        rec.stop();
-        }
-
-
-
-
-
-<!-- bouton1---------------------------------- -->
-      (function() {  
-             var dialog = document.getElementById('0EX');  
-             document.getElementById('EX0').onclick = function() { dialog.show();  
-         }; 
-           document.getElementById('XE0').onclick = function() { dialog.close();  
- }; 
-   })();
-<!-- ----------------------------------bouton1 -->
-
-
-
-
-
-
-function LX1() {
-  document.getElementById("LX").textContent = "ÉCOUTE : outil ayant pour utilisation d’écouter et pour but d’écouter OUTIL : défini par une utilisation et un but";
-}; 
-function LX2() {
-  document.getElementById("LX").textContent = "PERFORMER : action ayant pour but l’intention ENTENDRE : outil de réception de son n’ayant pas pour but l’écoute SON : phénomène sonore sans distinction";
-}; 
-function LX3() {
-  document.getElementById("LX").textContent = "SILENCE : événement non-sonore, potentiel entre son-événement ÉVÉNEMENT : caractérisé par un début et/ou une fin";
-};  
-function LX4() {
-  document.getElementById("LX").textContent = "PRÉCÉDENT : connaissance de début ou fin BRUIT DE FOND : son qui n’est pas événement";
-};  
-function LX5() {
-  document.getElementById("LX").textContent = "UTILISATEUR·ICE : ni spectateur  ni expert";
-};  
-function LX6() {
-  document.getElementById("LX").textContent = "PRÉCÉDENT : connaissance de début ou fin";
-};  
-function LX7() {
-  document.getElementById("LX").textContent = "CONTEXTE : espace non-événement CONTEXTE SONORE : ensemble de sonore, non-sonore, événement, non-événement";
-};  
-function LX8() {
-  document.getElementById("LX").textContent = "ESPACE : produit de la marche MARCHE : outil simultanément écriture et lecture de l’espace ENDROIT : espace avec précédent";
-};  
-function LX9() {
-  document.getElementById("LX").textContent = "FAIRE : action sans but autre que faire CONTEXTE : espace non-événement";
-}; 
-
-
-
 
 
 
     </script>
-	</html>
+
+</html>
