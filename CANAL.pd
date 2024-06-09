@@ -1,0 +1,93 @@
+#N canvas -11 -11 1920 1016 12;
+#X obj 227 289 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 188 410 spigot;
+#X obj 273 289 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 234 410 spigot;
+#X obj 319 289 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 280 410 spigot;
+#X obj 365 289 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 326 410 spigot;
+#X obj 164 378 bng 32 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 188 648 spigot;
+#X obj 234 648 spigot;
+#X obj 280 648 spigot;
+#X obj 365 525 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 326 648 spigot;
+#X obj 365 667 bng 32 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 188 429 s a;
+#X obj 234 429 s b;
+#X obj 280 429 s c;
+#X obj 326 429 s d;
+#X obj 188 629 r a;
+#X obj 234 629 r b;
+#X obj 280 629 r c;
+#X obj 326 629 r d;
+#X obj 227 525 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 273 525 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 319 525 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 641 410 *~;
+#X obj 659 289 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 682 410 *~;
+#X obj 700 289 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 641 436 s~ aa;
+#X obj 631 628 r~ aa;
+#X obj 683 436 s~ ab;
+#X obj 673 628 r~ ab;
+#X obj 631 647 *~;
+#X obj 649 525 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 673 647 *~;
+#X obj 691 525 tgl 32 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 649 667 *~ 1;
+#X obj 609 391 *~ 1;
+#X text 225 272 selection canal emetteur;
+#X text 218 508 selection canal recepteur;
+#X connect 0 0 1 1;
+#X connect 1 0 15 0;
+#X connect 2 0 3 1;
+#X connect 3 0 16 0;
+#X connect 4 0 5 1;
+#X connect 5 0 17 0;
+#X connect 6 0 7 1;
+#X connect 7 0 18 0;
+#X connect 8 0 7 0;
+#X connect 8 0 5 0;
+#X connect 8 0 3 0;
+#X connect 8 0 1 0;
+#X connect 9 0 14 0;
+#X connect 10 0 14 0;
+#X connect 11 0 14 0;
+#X connect 12 0 13 1;
+#X connect 13 0 14 0;
+#X connect 19 0 9 0;
+#X connect 20 0 10 0;
+#X connect 21 0 11 0;
+#X connect 22 0 13 0;
+#X connect 23 0 9 1;
+#X connect 24 0 10 1;
+#X connect 25 0 11 1;
+#X connect 26 0 30 0;
+#X connect 27 0 26 1;
+#X connect 28 0 32 0;
+#X connect 29 0 28 1;
+#X connect 31 0 34 0;
+#X connect 33 0 36 0;
+#X connect 34 0 38 0;
+#X connect 35 0 34 1;
+#X connect 36 0 38 0;
+#X connect 37 0 36 1;
+#X connect 39 0 26 0;
+#X connect 39 0 28 0;

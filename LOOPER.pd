@@ -1,0 +1,146 @@
+#N canvas -11 -11 1920 1016 12;
+#X obj 614 635 adc~;
+#X obj 1203 701 dac~;
+#X obj 1164 527 phasor~;
+#X floatatom 1221 447 5 0 0 0 - - -;
+#X obj 1203 585 *~;
+#X obj 1221 547 * 48000;
+#X msg 1164 465 1;
+#X obj 1164 504 /;
+#X obj 1202 656 *~;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array SAMPLE 4.8e+006 float 0;
+#X coords 0 0.2 4.8e+006 -0.2 200 200 1 0 0;
+#X restore 1131 165 graph;
+#X obj 786 603 snapshot~;
+#X msg 683 622 start \$1;
+#X obj 212 386 f;
+#X obj 237 386 + 1;
+#X obj 212 346 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 251 327 0;
+#X obj 212 464 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 763 634 stop;
+#X obj 763 508 tgl 32 0 empty empty SMPL 32 16 0 32 -232576 -1 -232576
+0 1;
+#X obj 763 580 sel 0 1;
+#X obj 704 276 loadbang;
+#X obj 232 479 timer;
+#X obj 1221 428 / 1000;
+#X obj 232 432 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 644 295 bng 32 250 50 0 empty empty reset 17 7 0 10 -262144
+-1 -1;
+#X obj 683 581 spigot;
+#X obj 644 558 metro;
+#X msg 653 539 1;
+#X obj 683 562 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 683 603 O;
+#X obj 669 334 del 1;
+#X msg 704 295 \; pd dsp 1;
+#X obj 212 327 del 1;
+#X msg 1210 494 0;
+#X msg 644 334 0;
+#X obj 644 250 +;
+#X obj 644 269 sel 2;
+#X obj 1220 637 tgl 15 0 empty empty empty 17 7 0 10 -232576 -1 -1
+0 1;
+#X floatatom 676 498 5 0 0 0 - - -;
+#X obj 212 588 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1210 479 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 644 235 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 1246 566 array size SAMPLE;
+#X obj 1202 609 tabread~ SAMPLE;
+#X obj 683 653 tabwrite~ SAMPLE;
+#X obj 704 218 tgl 32 0 empty empty RESET 32 16 0 32 -232576 -1 -232576
+0 1;
+#X obj 761 334 array size SAMPLE;
+#X msg 708 334 4.8e+006;
+#X text 1226 477 first hit resets phase;
+#X text 701 247 reset / overwrite;
+#X text 802 317 reset array;
+#X obj 212 409 sel 1 2;
+#X text 229 495 sample lenght (ms);
+#X text 1259 447 sample lenght (s);
+#X text 623 581 loopback;
+#X text 854 603 rec while playing;
+#X text 1130 395 -------------------------------------------------
+;
+#X obj 1131 381 playback;
+#X text 641 191 -------------------------------------------------;
+#X text 635 455 -------------------------------------------------;
+#X obj 636 441 recording;
+#X text 210 292 -------------------------------------------------;
+#X obj 211 278 timing;
+#X obj 212 312 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 642 177 reset;
+#X connect 0 0 44 0;
+#X connect 0 1 44 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 3 0 7 1;
+#X connect 3 0 6 0;
+#X connect 4 0 10 0;
+#X connect 4 0 43 0;
+#X connect 5 0 4 1;
+#X connect 5 0 42 0;
+#X connect 6 0 7 0;
+#X connect 7 0 2 0;
+#X connect 8 0 1 0;
+#X connect 8 0 1 1;
+#X connect 10 0 11 0;
+#X connect 11 0 44 0;
+#X connect 12 0 13 0;
+#X connect 12 0 51 0;
+#X connect 13 0 12 1;
+#X connect 14 0 12 0;
+#X connect 15 0 12 0;
+#X connect 16 0 21 0;
+#X connect 16 0 39 0;
+#X connect 16 0 40 0;
+#X connect 17 0 44 0;
+#X connect 18 0 19 0;
+#X connect 18 0 25 1;
+#X connect 18 0 41 0;
+#X connect 18 0 63 0;
+#X connect 19 0 17 0;
+#X connect 19 1 10 0;
+#X connect 20 0 24 0;
+#X connect 20 0 31 0;
+#X connect 21 0 38 0;
+#X connect 22 0 3 0;
+#X connect 23 0 21 1;
+#X connect 24 0 34 0;
+#X connect 24 0 15 0;
+#X connect 25 0 29 0;
+#X connect 26 0 28 0;
+#X connect 27 0 26 0;
+#X connect 28 0 25 0;
+#X connect 29 0 11 0;
+#X connect 30 0 47 0;
+#X connect 32 0 14 0;
+#X connect 33 0 2 1;
+#X connect 34 0 26 0;
+#X connect 34 0 30 0;
+#X connect 34 0 46 0;
+#X connect 35 0 36 0;
+#X connect 36 0 24 0;
+#X connect 37 0 8 1;
+#X connect 38 0 26 1;
+#X connect 38 0 27 0;
+#X connect 38 0 22 0;
+#X connect 39 0 29 0;
+#X connect 40 0 33 0;
+#X connect 41 0 35 0;
+#X connect 43 0 8 0;
+#X connect 45 0 35 1;
+#X connect 47 0 46 0;
+#X connect 51 0 16 0;
+#X connect 51 1 23 0;
+#X connect 63 0 32 0;
